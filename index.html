@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kenneth Nguyen | Student Page</title>
+    <style>
+      strong {
+        background-color: turquoise;
+      }
+      img {
+        width: auto;
+        height: 200px;
+      }
+      .vertical_flexbox {
+        display: flex;
+        flex-direction: column;
+        width: 950px;
+        margin-left: auto;
+			  margin-right: auto;
+        align-items: flex-start;
+      }
+      .horizontal_flexbox {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        border-top: 1px solid #000;
+      }
+      .section{
+        width: 465px;
+        /* 950px / 2sections = 475px - 2(5px) = 465px*/
+        /* height: auto; */
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "vertical_flexbox">
+      <div id = "header">
+        <h1>Kenneth Nguyen</h1>
+        <p>Email: <a href="mailto:kdn@usc.edu">kdn@usc.edu</a></p>
+      </div> <!-- header -->
+      <div class = "horizontal_flexbox">
+        <div class = "section" id = "personal_info">
+          <p>Favorite color: <strong>blue</strong></p>
+          <p>Favorite website: <a href="https://www.youtube.com/">YouTube</a></p>
+          <p>Favorite activity:</p>
+          <img src="img/gaming_desk.png" alt="Gaming">
+        </div> <!-- personal_info -->
+        <div class = "section" id = "schedule">
+          <p>Fall 2023 Schedule:</p>
+          <ul>
+            <li>QBIO 475</li>
+            <li>ITP 348</li>
+            <li>ITP 104</li>
+            <li>MEDS 335</li>
+            <li>MEDS 370</li>
+            <li>MEDS 405</li>
+            <li>QBIO 493</li>
+          </ul>
+        </div> <!-- schedule -->
+      </div> <!-- horizontal_flexbox -->
+      <div class = "horizontal_flexbox">
+        <div class = "section" id = assignments>
+          <p>Completed Assignments:</p>
+          <ul>
+            <li><a target="_blank" href="assignment_01/web_resume.html">Assignment 1: Web Resume</a></li>
+            <li><a target="_blank" href="assignment_02/interests_page.html">Assignment 2: Interests Page</a></li>
+          </ul>
+        </div> <!-- assignments -->
+        <div class = "section" id = "labs">
+          <p>Completed Labs:</p>
+          <ul>
+            <li><a target="_blank" href="Lab 2/index.html">Lab 2: Student Page</a></li>
+            <li><a target="_blank" href="Lab 3/web_resume.html">Lab 3: Updated Resume</a></li>
+            <li><a target="_blank" href="Lab 4/index.html">Lab 4: Student Page Layout</a></li>
+          </ul>
+        </div> <!-- labs -->
+      </div> <!-- horizontal_flexbox -->
+    </div> <!-- vertical_flexbox -->
+  </body>
+</html>
+<!-- extra comment for recommiting -->
