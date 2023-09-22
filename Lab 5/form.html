@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ITP 104 Course Survey</title>
+    <style>
+      strong {
+        background-color: turquoise;
+      }
+      img {
+        width: auto;
+        height: 200px;
+      }
+      .vertical_flexbox {
+        display: flex;
+        flex-direction: column;
+        width: 950px;
+        margin-left: auto;
+			  margin-right: auto;
+        align-items: flex-start;
+      }
+      .horizontal_flexbox {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        border-top: 1px solid #000;
+      }
+      #main {
+        margin-left: auto;
+        margin-right: auto;
+		  }
+      .form-row {
+			margin: 10px 0px;
+			display: flex;
+      }
+      .left-col {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>ITP 104 Course Survey</h1>
+      <form action = "confirmation.html">
+        <div class = "form-row">
+          <div class = "left-col">
+            <label for = "name-id">Name:</label>
+          </div>
+          <input type = "text" id = "name-id" placeholder = "Tommy">
+        </div>
+        <div class = "form-row">
+          <div class = "left-col">
+            <label for = "subject-id">Section</label>
+          </div>
+          <!-- dropdown -->
+          <select id = "subject-id">
+            <option>M/W 5:00-6:20</option>
+            <option>M/W 6:30-7:50</option>
+            <option>T/Th 11:00-12:20</option>
+            <option>W 4:00-6:50</option>
+          </select>
+        </div>
+        <div class = "form-row">
+          <div class = "left-col">
+            Rate the class from a scale of 1-5:
+          </div>	
+          <label>
+            <input type = "radio" name = "student">
+            1
+          </label>
+          <label>
+            <Input type = "radio" name = "student">
+            2
+          </label>
+          <label>
+            <Input type = "radio" name = "student">
+            3
+          </label>
+          <label>
+            <Input type = "radio" name = "student">
+            4
+          </label>
+          <label>
+            <Input type = "radio" name = "student">
+            5
+          </label>
+        </div>
+        <div class = "form-row">
+          <div class = "left-col">
+            What resources do you use for ITP 104?
+          </div>
+          <label>
+            <input type = "checkbox">
+            Office Hours
+          </label>
+          <label>
+            <input type = "checkbox">
+            Piazza
+          </label>
+          <label>
+            <input type = "checkbox">
+            Tutoring
+          </label>
+        </div>
+        <div class = "form-row">
+          <!-- multi-line input -->
+          <div class = "left-col">
+            <label for = "msg-id">Additional Comments:</label>
+          </div>
+          <textarea id = "msg-id" placeholder = "Add comments here..."></textarea>
+        </div>
+        <div class = "form-row">
+          <div class = "left-col">
+            <!-- empty for formatting -->
+          </div>
+          <label>
+            <input type = "checkbox">
+            Accept terms and conditions
+          </label>
+        </div>
+        <div class = "form-row">
+          <button type = "submit">Submit</button>
+          <button type = "reset">Reset</button>
+        </div>
+      </form>
+  
+  
+    </div> <!-- #main -->
+  </body>
+</html>
