@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Kenneth Nguyen | Calendar</title>
+    <style>
+      #header {
+        width: 1030px;
+        height: 150px;
+        line-height: 150px;
+        font-size: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        color: red;
+        text-align: center;
+        background-image: url('img/snowflakes.jpg');
+        background-size: cover;
+        background-position: center;
+	  }
+      #main {
+        width: 1030px;
+        margin-left: auto;
+        margin-right: auto;
+	  }
+      table {
+		border-collapse: collapse;
+        width: 1030px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      th {
+        border: 1px solid #CCC;
+        border-bottom: 3px solid #CCC;
+        text-align: center;
+        /*
+        width of borders: 1px*8=8px
+        cell width: (1030-8)/7=146px
+        */
+        width: 146px;
+        padding: 10px 0px;
+      }
+      td {
+        border: 1px solid #CCC;
+        text-align: right;
+        vertical-align: top;
+        width: 146px;
+        height: 146px;
+        padding: 5px;
+	  }
+      #feb12 {
+        background-image: url('img/cake.jpg');
+        background-size: cover;
+        background-position: center;
+	  }
+      #feb14 {
+        background-image: url('img/roses.jpg');
+        background-size: cover;
+        background-position: center;
+	  }
+      #feb29 {
+        background-image: url('img/frog.jpg');
+        background-size: cover;
+        background-position: center;
+	  }
+      .not_feb {
+        color: lightgray;
+      }
+      .special_day {
+        color: skyblue;
+        font-weight: bold;
+      }
+      .special_day_name {
+        text-align: center;
+        font-weight: bold;
+        margin: 5px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        background-color: cyan;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>February 2024</h1>
+    </div>
+    <div id="main">
+      <table>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+        <tr>
+          <td class = "not_feb">28</td>
+          <td class = "not_feb">29</td>
+          <td class = "not_feb">30</td>
+          <td class = "not_feb">31</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr> 
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td class = "special_day" id = "feb12">
+            12
+            <p class = "special_day_name">Kenneth's Birthday</p>
+          </td>
+          <td>13</td>
+          <td class = "special_day" id = "feb14">
+            14
+            <p class = "special_day_name">Valentine's Day</p>
+          </td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td class = "special_day" id = "feb29">
+            29
+            <p class = "special_day_name">Leap Day</p>
+          </td>
+          <td class = "not_feb">1</td>
+          <td class = "not_feb">2</td>
+        </tr> 
+      </table>
+    </div>
+  </body>
+</html>
