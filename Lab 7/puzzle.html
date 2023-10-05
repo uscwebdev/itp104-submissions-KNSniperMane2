@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Penguins Puzzle</title>
+    <style>
+      #main {
+        width: 1100px;
+        margin-left: auto;
+			  margin-right: auto;
+        text-align: center;
+      }
+      #puzzle {
+        width: 942px;
+        margin-left: auto;
+			  margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .puzzle_row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      .puzzle_piece_box {
+        width: 314px;
+        height: 470px;
+      }
+      .puzzle_piece {
+        width: 314px;
+        height: 470px;
+      }
+      #modified_puzzle_piece_1 {
+        box-shadow: 0px 6px 10px #777;
+        position: relative;
+        right: 75px;
+        bottom: 50px;
+      }
+      #modified_puzzle_piece_2 {
+        box-shadow: 0px 6px 10px #777;
+        position: relative;
+        top: 100px;
+        left: 25px;
+      }
+      .thumbnail:hover {
+        opacity: 1.0;
+      }
+      .img-container > p {
+        text-align: center;
+        visibility: hidden;
+      }
+      .thumbnail:hover + p {
+			visibility: visible;
+		  }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Penguins Puzzle</h1>
+        <div id = "puzzle">
+          <div class = "puzzle_row">
+            <div class = puzzle_piece_box>
+              <img class = "puzzle_piece" id="modified_puzzle_piece_1" src="img/row-1-column-1.jpg" alt="Penguin Puzzle Piece Row 1 Column 1">
+            </div>
+            <div class = puzzle_piece_box>
+              <img class = "puzzle_piece" src="img/row-1-column-2.jpg" alt="Penguin Puzzle Piece Row 1 Column 2">
+            </div>
+            <div class = puzzle_piece_box>
+              <img class = "puzzle_piece" src="img/row-1-column-3.jpg" alt="Penguin Puzzle Piece Row 1 Column 3">
+            </div>
+          </div>
+          <div class = "puzzle_row">
+            <div class = puzzle_piece>
+              <img class = puzzle_piece src="img/row-2-column-1.jpg" alt="Penguin Puzzle Piece Row 2 Column 1">
+            </div>
+            <div class = puzzle_piece>
+              <img class = puzzle_piece id="modified_puzzle_piece_2" src="img/row-2-column-2.jpg" alt="Penguin Puzzle Piece Row 2 Column 2">
+            </div>
+            <div class = puzzle_piece>
+              <img class = puzzle_piece src="img/row-2-column-3.jpg" alt="Penguin Puzzle Piece Row 2 Column 3">
+            </div>
+          </div>
+      </div> <!-- #puzzle -->
+    </div> <!-- #main -->
+  </body>
+</html>
