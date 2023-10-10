@@ -1,0 +1,68 @@
+@font-face {
+    src: url('fonts/Midnight.otf');
+    font-family: "Midnight";
+}
+h1 {
+    font-family: 'Midnight', serif;
+    font-size: 5em;
+}
+body { 
+    background-color: green;
+}
+#footer { 
+    width: 1070px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+}
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+#navbar li {
+    width: 175px;
+    text-align: center;
+    position: relative;
+}
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+#sub-menu {
+    z-index: 10;
+}
+#navbar a {
+    text-decoration: none;
+    background-color: lightgreen;
+    width: 175px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    color: #777;
+    border-bottom: 2px solid #FFF;
+}
+#top-menu ul {
+    position: absolute;
+    display: none;
+}
+#navbar li:hover > ul {
+    display: block;
+}
+#navbar a:hover, #navbar #highlight-nav {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+#navbar {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    background-color: darkgreen;
+    z-index: 10;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Kenneth Nguyen | Digital Strategy Games</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pixelify+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "main.css">
+    <style>
+        #header { 
+            height: 500px;
+            width: 1070px;
+            text-align: center;
+            line-height: 500px;
+            background-image: url("img/strategy.jpg");
+            background-size: cover;
+            background-position: center;
+            color: red;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        }
+        #main { 
+            width: 1070px;
+            background-color: turquoise;
+            margin-left: auto;
+			margin-right: auto;
+            padding: 15px;
+            display: flex;
+            flex-direction: row;
+        }
+        h2 {
+            font-family: 'Pixelify Sans', cursive;
+        }
+        #content {
+            margin: 10px;
+            padding: 15px;
+            background-color: fuchsia;
+        }
+        #sidebar {
+            margin: 10px;
+            padding: 15px;
+            background-color: orange;
+            text-align: center;
+        }
+        .pics {
+			float: right;
+            width: 400px;
+            opacity: 0.7;
+		}
+        .pics:hover {
+            opacity: 1.0;
+        }
+        .img-container > p {
+            text-align: center;
+            visibility: hidden;
+        }
+        .pics:hover + p {
+            visibility: visible;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+        <h1>Digital Strategy Games</h1>
+    </div>
+
+    <div id = "navbar">
+        <ul id = "top-menu">
+		    <li><a id = "highlight-nav" href = "interests_page.html#main">Home</a>
+                <ul id = "sub-menu">
+                    <li><a href="interests_page.html#civ6">Civilization 6</a></li>
+					<li><a href="interests_page.html#feengage">Fire Emblem Engage</a></li>
+					<li><a href="interests_page.html#polytopia">The Battle of Polytopia</a></li>
+                </ul>
+            </li>
+		    <li><a href = "gallery.html">Gallery</a></li>
+        </ul>
+	</div>
+
+    <div id="main">
+        <div id="content">
+            <h2 id = "civ6">Civilization 6</h2>
+            <p>Sid Meier's Civilization VI is a turn-based strategy 4X video game developed by Firaxis Games and published by 2K. The mobile port was published by Aspyr Media. The latest entry into the Civilization series, it was released on Windows and macOS in October 2016, with later ports for Linux in February 2017, iOS in December 2017, Nintendo Switch in November 2018, PlayStation 4 and Xbox One in November 2019, and Android in 2020.</p>
+            <p>Similar to previous installments, the goal for the player is to develop a civilization from an early settlement through many in-game millennia to become a world power and achieve one of several victory conditions, such as through military domination, technological superiority, or cultural influence, over the other human and computer-controlled opponents. Players do this by exploring the world, founding new cities, building city improvements, deploying military troops to attack and defend themselves from others, researching new technologies and civics advancements, developing an influential culture, and engaging in trade and negotiations with other world leaders.</p>
+            <p>Source: <a target="_blank" href="https://en.wikipedia.org/wiki/Civilization_VI">https://en.wikipedia.org/wiki/Civilization_VI</a></p>
+            <h2 id = "feengage">Fire Emblem Engage</h2>
+            <p>Fire Emblem Engage is a tactical role-playing game developed by Intelligent Systems and published by Nintendo for the Nintendo Switch. It is the seventeenth installment in the Fire Emblem series, and was released worldwide on January 20, 2023. The game follows Alear, a dragon in human form, who awakens from a thousand-year slumber and quickly becomes embroiled in a conflict with the forces of the Fell Dragon Sombron. Alear travels the land of Elyos gaining allies while fighting against the armies of the rival Kingdom of Elusia and Sombron's resurrected undead forces; the player controls and maneuvers Alear's army in these battles. One of the core parts of both the setting and the gameplay are twelve magic rings that contain phantasmal copies of characters from previous Fire Emblem games. Characters wearing these "Emblem Rings" can "Engage" to gain vast power from summoning and merging with these phantoms. Both Alear and Sombron seek to gain control of the rings; possession of all twelve will allow a feat of immense magic to be performed.</p>
+            <p>Intelligent Systems designed the game to have a fresh new art style, with colorful characters and 3D animation models used wherever possible compared to earlier games in the series that would often show 2D still portraits for dialogue and the like. It was intended to be a heroic fantasy quest that followed a protagonist growing and maturing into a heroic role to save the world.</p>
+            <p>Source: <a target="_blank" href="https://en.wikipedia.org/wiki/Fire_Emblem_Engage">https://en.wikipedia.org/wiki/Fire_Emblem_Engage</a></p>
+            <h2 id = "polytopia">The Battle of Polytopia</h2>
+            <p>The Battle of Polytopia is a turn-based 4X strategy game developed by Swedish gaming company Midjiwan AB. Players play as one of sixteen tribes to develop an empire and defeat opponents in a low poly square-shaped world. Players can play against bots or human opponents, local or online. The game was initially released in February 2016.</p>
+            <p>The Battle of Polytopia was initially released on iOS in February 2016 as Super Tribes. In June 2016, the game's name was changed to The Battle of Polytopia due to trademark issues. The game was released on Android on December 1, 2016. Online multiplayer was added on February 15, 2018. A desktop version using Steam was released on August 4, 2020. The game was added as a feature to Tesla cars on December 25, 2020.</p>
+            <p>Source: <a target="_blank" href="https://en.wikipedia.org/wiki/The_Battle_of_Polytopia">https://en.wikipedia.org/wiki/The_Battle_of_Polytopia</a></p>
+        </div>
+        <div id="sidebar">
+            <div class = img-container>
+                <img class="pics" src="img/civ6.jpg" alt="Civilization 6">
+                <p>Siege of Ancient Era Roman city in <em>Civilization 6</em></p>
+            </div>
+            <div class = img-container>
+                <img class="pics" src="img/engage.jpg" alt="Fire Emblem Engage">
+                <p>Pre-combat analysis of protagonist Alear fighting an enemy in <em>Fire Emblem Engage</em></p>
+            </div>
+            <div class = img-container>
+                <img class="pics" src="img/polytopia.jpg" alt="Polytopia">
+                <p>Founding of a new Luxidoorian city in <em>The Battle of Polytopia</em></p>
+            </div>
+        </div>
+        
+    </div>
+    <div id="footer">
+        <h3>Page created by Kenneth Nguyen</h3>
+    </div>
+  </body>
+</html>
