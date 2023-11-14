@@ -1,0 +1,108 @@
+@font-face {
+    src: url('fonts/Prisma.ttf');
+    font-family: "Prisma";
+}
+@font-face {
+    src: url('fonts/BoogieNightsShadowNF.ttf');
+    font-family: "BoogieNightsShadowNF";
+}
+@font-face {
+    src: url('fonts/Raleway-Regular.ttf');
+    font-family: "Raleway-Regular";
+}
+#header { 
+    height: 200px;
+    width: 1080px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+}
+h1 {
+    font-family: "BoogieNightsShadowNF", sans-serif;
+    font-size: 5em;
+    color: rgb(0, 225, 255);
+    background-color: rgb(173, 173, 173)
+}
+p {
+    font-family: "Raleway-Regular", sans-serif;
+}
+#menu {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 40px;
+    right: 40px;
+    font-family: "Prisma", sans-serif;
+    font-size: 1.75em;
+}
+#menu-label {
+    line-height: 50px;
+    background-color: rgb(173, 173, 173);
+    color: black;
+}
+#menu-contents {
+    display: none;
+}
+#menu:hover #menu-contents {
+    display: block;
+}
+#menu:hover #menu-label {
+    color: rgb(173, 173, 173);
+    background-color: black;
+}
+#menu ul {
+    background-color: lightgray;
+    color: black;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+#menu li {
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+#menu li:hover #menu-home {
+    background-color: white;
+    color: goldenrod;
+}
+#menu li:hover #menu-how-to {
+    background-color: rgb(255, 230, 234);
+    color: darkorange;
+}
+#menu li:hover #menu-more-info {
+    background-color: lightgreen;
+    color: blue;
+}
+#menu a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+#menu li:hover > ul {
+    display: block;
+}
+#main {
+    width: 1080px;
+    background-color: turquoise;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+#footer { 
+    width: 1080px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid black;
+}

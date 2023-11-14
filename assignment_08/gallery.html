@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Kenneth Nguyen | Game Gallery</title>
+    <link rel = "stylesheet" href = "main.css">
+    <style>
+        #header { 
+            height: 300px;
+            width: 1070px;
+            text-align: center;
+            line-height: 300px;
+            background-image: url("img/strategy2.jpg");
+            background-size: cover;
+            background-position: center;
+            color: red;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        }
+        #main { 
+            width: 1070px;
+            background-color: turquoise;
+            margin-left: auto;
+			margin-right: auto;
+            padding: 15px;
+        }
+        .big_row {
+            width: 1070px;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+        }
+        .column_split {
+            display: flex;
+            flex-direction: column;
+        }
+        .row_split {
+            display: flex;
+            flex-direction: row;
+        }
+        .box_2x2 {
+            width: 535px;
+            height: 500px;
+        }
+        .box_1x2 {
+            width: 267.5px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        .box_2x1 {
+            width: 535px;
+            height: 250px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box_1x1 {
+            width: 267.5px;
+            height: 250px;
+        }
+        .big_img {
+            width: 515px;
+            height: 480px;
+            margin: 9px;
+            border: 1px solid black;
+        }
+        .small_img {
+            width: 247.5px;
+            height: 230px;
+            margin: 9px;
+            border: 1px solid black;
+        }
+        .wide_img {
+            width: 515px;
+            height: 230px;
+            margin: 9px;
+            border: 1px solid black;
+        }
+        .tall_img {
+            width: 247.5px;
+            height: 480px;
+            margin: 9px;
+            border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+        <h1>Game Gallery</h1>
+    </div>
+
+    <div id = "navbar">
+		<a href = "interests_page.html">Home</a> 
+		<a id = "highlight-nav" href = "gallery.html#main">Gallery</a>
+	</div>
+
+    <div id="main">
+        <div class = "big_row">
+            <div class = "box_2x2">
+                <div class = "big_img">
+                    <!-- big image 1 -->
+                </div>
+            </div> <!-- top left quadrant -->
+            <div class = "box_2x2">
+                <div class = "column_split">
+                    <div class = "box_2x1">
+                        <div class = "box_1x1">
+                            <div class = "small_img">
+                                <!-- small image 1 -->
+                            </div>
+                        </div>  
+                        <div class = "box_1x1">
+                            <div class = "small_img">
+                                <!-- small image 2 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "box_2x1">
+                        <div class = "wide_img">
+                            <!-- wide image 1 -->
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- top right quadrant -->
+        </div> <!-- big_row 1 -->
+        <div class = "big_row">
+            <div class = "box_2x2">
+                <div class = "column_split">
+                    <div class = "box_2x1">
+                        <div class = "wide_img">
+                            <!-- wide image 2 -->
+                        </div>
+                    </div>
+                    <div class = "box_2x1">
+                        <div class = "box_1x1">
+                            <div class = "small_img">
+                                <!-- small image 3 -->
+                            </div>
+                        </div>  
+                        <div class = "box_1x1">
+                            <div class = "small_img">
+                                <!-- small image 4 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div> <!-- bottom left quadrant -->
+            <div class = "box_2x2">
+                <div class = "row_split">
+                    <div class = "box_1x2">
+                        <div class = "box_1x1">
+                            <div class = "small_img">
+                                <!-- small image 5 -->
+                            </div>
+                        </div>  
+                        <div class = "box_1x1">
+                            <div class = "small_img">
+                                <!-- small image 6 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "box_1x2">
+                        <div class = "tall_img">
+                            <!-- tall image 1 -->
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- bottom right quadrant -->
+        </div> <!-- big_row 2 -->
+    </div> <!-- main -->
+    <div id="footer">
+        <h3>Page created by Kenneth Nguyen</h3>
+    </div>
+  </body>
+</html>
