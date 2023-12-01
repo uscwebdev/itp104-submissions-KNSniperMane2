@@ -4,44 +4,341 @@
     <title>Rubik's Cube | More Info</title>
     <meta charset = "utf-8">
     <meta name="keywords" content="Rubik's, Cube, Rubik's Cube, 3x3">
-    <meta name="description" content="More Info Page of Rubik's Cube Website containing Historical/Basic Info, a 3x3 Solving Guide, and Media of Other Cubes and World Records">
+    <meta name="description" content="More-info page of the Rubik's cube website containing a gallery of various Rubik's cubes, Guinness videos showcasing Rubik's cube world records, and a tournament registration form.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "stylesheet" href = "main.css">
     <style>
-        body { 
-            background-color: green;
-        }
-        #header { 
-            background-color: blue;
-        }
-        #main { 
-            background-color: blue;
-        }
-        #footer { 
-            background-color: blue;
-        }
+      body { 
+        background-color: green;
+      }
+      #header { 
+        background-color: blue;
+      }
+      #main { 
+        background-color: blue;
+      }
+      h2 {
+        text-align: center;
+        color: lightgreen
+      }
+      #footer { 
+        background-color: blue;
+      }
+      .row_split {
+        display: flex;
+        flex-direction: row;
+      }
+      .column_split {
+        display: flex;
+        flex-direction: column;
+      }
+      .box_2x2 {
+        width: 520px;
+        height: 480px;
+        margin: 9px;
+        border: 1px solid black;
+      }
+      .box_1x2 {
+        width: 520px;
+        height: 230px;
+        margin: 9px;
+        border: 1px solid black;
+      }
+      .box_2x1 {
+        width: 250px;
+        height: 480px;
+        margin: 9px;
+        border: 1px solid black;
+      }
+      .box_1x1 {
+        width: 250px;
+        height: 230px;
+        margin: 9px;
+        border: 1px solid black;
+      }
+      .img-container {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .img-container > img{
+        height: auto;
+        width: 100%; 
+      }
+      .img-container > #height_100{
+        height: 100%;
+        width: auto; 
+      }
+      iframe {
+        width: 520px;
+        height: 293px;
+        margin: 9px;
+        border: 1px solid black;
+      }
+      p, #form label, #form option, #form .form-col {
+        font-family: "Raleway-Regular", sans-serif;
+        color: lightgreen
+      }
+      h3 {
+        color: white;
+      }
+      .tourney_pic {
+        width: 500px;
+        height: 100%;
+        float: right;
+      }
+      .img-container > img {
+			  transition: all 1s;
+      }
+      .img-container:hover > img {
+        transform: scale(1.25, 1.25) rotate(10deg);
+      }
     </style>
   </head>
   <body>
     <div id="header">
-        <h1>Rubik's Cubing</h1>
-        <div id="menu">
-          <div id="menu-label">
-            Menu
-          </div>
-          <ul id="menu-contents">
-            <li><a id = "menu-home" href="home.html">Home</a></li>
-            <li><a id = "menu-how-to" href="how_to.html">How-to</a></li>
-            <li><a id = "menu-more-info" href="more_info.html">More info</a></li>
-          </ul>
+      <h1>Rubik's Cubing</h1>
+      <div id="menu">
+        <div id="menu-label">
+          Menu
         </div>
+        <ul id="menu-contents">
+          <li><a id = "menu-home" href="home.html">Home</a></li>
+          <li><a id = "menu-how-to" href="how_to.html">How-to</a></li>
+          <li><a id = "menu-more-info" href="more_info.html">More info</a></li>
+        </ul>
+      </div>
     </div>
 
     <div id="main">
-        
-    </div>
+      <h2>Cube Gallery</h2>
+      <div id = "gallery">
+        <div class = "row_split">
+          <div class = "column_split">
+            <div class = "box_1x2">
+              <div class="img-container">
+                <img src="img/wide.png" alt="Mirror cube">
+              </div>
+            </div>
+            <div class = "row_split">
+              <div class = "column_split">
+                <div class = "box_1x1">
+                  <div class="img-container">
+                    <img src="img/small_1.png" alt="4x4 cube">
+                  </div>
+                </div>
+                <div class = "box_1x1">
+                  <div class="img-container">
+                    <img src="img/small_2.png" alt="2x2 cube">
+                  </div>
+                </div>
+              </div>
+              <div class = "box_2x1">
+                <div class="img-container">
+                  <img id = "height_100" src="img/tall.png" alt="Picture cube">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column_split">
+            <div class = "box_2x2">
+              <div class="img-container">
+                <img src="img/big.png" alt="Megaminx">
+              </div>
+            </div>
+            <div class = "row_split">
+              <div class = "box_1x1">
+                <div class="img-container">
+                  <img src="img/small_3.png" alt="Skewb">
+                </div>
+              </div>
+              <div class = "box_1x1">
+                <div class="img-container">
+                  <img src="img/small_4.png" alt="3x3 twist">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- gallery -->
+      <h2>Rubik's Cube Records</h2>
+      <div id="videos">
+        <div class = "row_split">
+          <div class = "column_split">
+            <iframe src="https://www.youtube.com/embed/LL8pN96MHZs?si=zQOkBgg4GFbPpMNJ"
+              title="YouTube video player" allow="accelerometer; autoplay;
+              clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/q6AsllXpKBU?si=Lcbqlo7xh6KCwBsB"
+              title="YouTube video player" allow="accelerometer; autoplay;
+              clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class = "column_split">
+            <iframe src="https://www.youtube.com/embed/B40SK_5Wm1o?si=pkf5v5sWf3TWsTL5"
+              title="YouTube video player" allow="accelerometer; autoplay;
+              clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/GFu9QxlMqsY?si=0p1kOkz70dVXf1Zf"
+              title="YouTube video player" allow="accelerometer; autoplay;
+              clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> <!-- videos -->
+      <div id="form">
+        <h2>Rubik's Cube Tournament Registration</h2>
+        <p>You could be the next Rubik's cube champion! If you're interested in competing in a tournament, fill out the registration form below.</p>
+        <img src="img/tourney_1.png" class = "tourney_pic" alt="Rubik's Cube Tournament 1">
+        <form action="submit.html">
+          <div class="form-row">
+            <div class="form-col">
+              <label for="first_name">First Name:</label>
+            </div>
+            <input id="first_name" type="text" placeholder="Ernő">
+          </div>
+          <p> </p> <!-- empty spacer -->
+          <div class="form-row">
+            <div class="form-col">
+              <label for="last_name">Last Name:</label>
+            </div>
+            <input id="last_name" type="text" placeholder="Rubik">
+          </div>
+          <p> </p> <!-- empty spacer -->
+          <div class="form-row">
+            <div class="form-col">
+              <label for="email">Email:</label>
+            </div>
+            <input id="email" type="email" placeholder="erno_rubik@gmail.com">
+          </div>
+          <p> </p> <!-- empty spacer -->
+          <div class="form-row">
+            <div class="form-col">
+              <label for="skill">Skill Level</label>
+            </div>
+            <select id="skill">
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+          </div>
+          <p> </p> <!-- empty spacer -->
+          <div class="form-row">
+            <div class="form-col">City</div>
+            <label>
+              <input type="radio" name="city">
+              Los Angeles, California
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="radio" name="city">
+              New York City, New York
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="radio" name="city">
+              San Francisco, California
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="radio" name="city">
+              Houston, Texas
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="radio" name="city">
+              Miami, Florida
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="radio" name="city">
+              Chicago, Illinois
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="radio" name="city">
+              Washington D.C
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="radio" name="city">
+              Other
+            </label>
+          </div>
+          <p> </p> <!-- empty spacer -->
+          <img src="img/tourney_2.png" class = "tourney_pic" alt="Rubik's Cube Tournament 2">
+          <div class="form-row">
+            <div class="form-col">
+              <label for="other_city">City (Other)</label>
+            </div>
+            <input id="other_city" type="text" placeholder="Rubik City">
+          </div>
+          <p> </p> <!-- empty spacer -->
+          <div class="form-row">
+            <div class="form-col">Interested Competitions</div>
+            <label>
+              <input type="checkbox">
+              2x2
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="checkbox">
+              3x3
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="checkbox">
+              3x3 Blindfolded
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="checkbox">
+              Pyraminx
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="checkbox">
+              Megaminx
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <input type="checkbox">
+              4x4
+            </label>
+          </div>
+          <p> </p> <!-- empty spacer -->
+          <div class="form-row">
+            <div class="form-col">
+              <label for="notes">Is there anything that we should know?</label>
+            </div>
+            <textarea id="notes" placeholder="Add comments here..."></textarea>
+          </div> <!-- .form-row -->
+          <p> </p> <!-- empty spacer -->
+          <div class="form-row">
+            <button id="submit-btn" type="submit">Submit</button>
+            <button type="reset">Clear</button>
+          </div> <!-- .form-row -->
+        </form>
+      </div> <!-- form -->
+    </div> <!-- main -->
+
     <div id="footer">
-        <h3>Kenneth Nguyen ©2023</h3>
+      <h3>Kenneth Nguyen ©2023</h3>
     </div>
   </body>
 </html>
